@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Connect 4 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="setUp()">
+    <div id=outerWrap>
+        <div id=gameTitle>Connect 4</div>
+        <table id=gameTable>
+        </table>
+
+        <div id="redtoken">
+            <svg height="60px" width="60px">
+                <g>
+                    <ellipse style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-opacity:1" cx="30px" cy="30px" rx="25px" ry="25px" />
+                </g>
+            </svg>
+
+        </div>
+
+
+        <div id="yellowtoken">
+            <svg height="60px" width="60px">
+                <g>
+                    <ellipse style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-opacity:1" cx="30px" cy="30px" rx="25px" ry="25px" />
+                </g>
+            </svg>
+
+        </div>
+        <div id=winMsg></div>
+        <div id="Reset">
+            <button onClick="Reset()">Reset</button>
+        </div>
+
+    </div>
+</body></html>
